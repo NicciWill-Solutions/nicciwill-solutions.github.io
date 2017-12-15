@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+    font-family: Raleway, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.25em;
+    color: #333333;
+    background: #00467F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A5CC82, #00467F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A5CC82, #00467F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-bottom: 100px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Lobster, serif;
+    color: #405E26;
+}
+
+h2 {
+    color: #595959;
+}
+
+svg {
+    fill: white;
+    background: rgba(0,0,0,0.1);
+    padding: 40px 20px 20px 47px;
+    border-radius: 50%;
+    width: 200px;
+    margin-top: 50px;
+}
+
+main {
+    background: rgba(255,255,255, 0.9);
+    margin: 3em auto 0 auto;
+    width: 70%;
+    max-width: 70%;
+    padding: 20px;
+    /*border: 1px solid #A5CC83;*/
+    box-shadow: 0 0 0 10px rgba(0,0,0,0.1);
+}
+
+button {
+    color: #405E26;
+    padding: 10px 50px;
+    border: 1px solid #405E26;
+    background: none;
+    font-size: .8em;
+    margin: 35px 0;
+    border-radius: 3px;
+}
+
+.questNumber-wrapper {
+    margin-bottom: 20px;
+}
+
+input#questNumber, select {
+    padding: 5px;
+    outline: 0;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+select {
+    font-size: 14px;
+}
+
+.errorMessage {
+    color: red;
+    font-weight: bold;
+}
+
+.placeAndScore {
+    font-size: .7em;
+    line-height: 1.5em;
+    color: #888;
+}
+
+.questionsAndAnswers {
+    text-align: left;
+    max-width: 75%;
+    margin: 20px auto 0 auto;
+}
+
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
