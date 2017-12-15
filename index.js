@@ -7,7 +7,7 @@ const STORE =
 {
   questions: [
     {
-      quest: 'What fruit is traditionally used in an Eve\'s pudding?',
+      quest: 'Which fruit is traditionally used in an Eve\'s pudding?',
       correctAnswer: 'apples',
       answersArr: [ 'pears', 'apples', 'raisins', 'lemon'],
       //userAnswerCorrect: false
