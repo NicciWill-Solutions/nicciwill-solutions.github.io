@@ -3,91 +3,123 @@
 <head>
     <title>Nicci Williams - Full Stack Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Joti+One|Oswald|Quicksand" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
-    <nav role="navigation">Nav</nav>
+    <nav role="navigation"></nav>
     <main role="main">
         <header role="banner">
-            <h1>Hey, I’m Nicci…</h1>
-            <h2>a full stack developer at the corner of creativity and code.</h2>
-
-            <div class="favs">
-            <p>I’m currently a freelance web developer and full-time student in Thinkful’s Engineering Immersion Program.</p>
-
-            <h4>My favorite things to do include:</h4>
-            <ol>
-                <li>creating digital experiences - from whiteboard sketch to live application</li>
-                <li>smoothing out unnecessarily confusing or complicated processes</li>
-                <li>rescuing clients from the ’I have no idea what you’re talking about’ head nod</li>
-                <li>uncovering (and subsequently ending) user hacks caused by ineffective systems</li>
-                <li>hearing clients scream “Yes! You get it.”</li>
-            </ol>
-
-            <p>In the moments away from my laptop (Her name is Lola. She is a showgirl…but I digress), I love to try new foods and recipes, talk back to the TV while watching Shark Tank and The Profit, give back to the community (GDI, Thinkful and Foreverfamily) and plan the decor for the tiny house of my dreams.</p>  
-        </div>
-
+            <div class="intro">
+                <h1>Hey, I’m <a class="feature name">Nicci</a>…</h1>
+                <h2>a full stack developer doing big things at the intersection of <a href="#" class="feature">creativity</a> and <a href="#" class="feature">code</a></h2>
+            </div>
             
+
+            <!-- <div class="favs">
+                <p>I’m currently a freelance web developer and full-time student in Thinkful’s Engineering Immersion Program.</p>
+
+                <h4>My favorite things to do include:</h4>
+                <ol>
+                    <li>creating digital experiences - from whiteboard sketch to live application</li>
+                    <li>smoothing out unnecessarily confusing or complicated processes</li>
+                    <li>rescuing clients from the ’I have no idea what you’re talking about’ head nod</li>
+                    <li>uncovering (and subsequently ending) user hacks caused by ineffective systems</li>
+                    <li>hearing clients scream “Yes! You get it.”</li>
+                </ol>
+
+                <p>In the moments away from my laptop (Her name is Lola. She is a showgirl…but I digress), I love to try new foods and recipes, talk back to the TV while watching Shark Tank and The Profit, give back to the community (GDI, Thinkful and Foreverfamily) and plan the decor for the tiny house of my dreams.</p>  
+            </div>    -->
         </header>
 
         <section>
-            <h3><a href="https://peerlesstaxprofessionals.com/" target="_blank">Peerless Tax Professionals</a></h3>
 
             <img src="ptp.jpg" alt="Peerless Tax Professionals" />
-            <p>This site is for a new, tax prep service company located outside Columbus, OH. The owner was looking for an online presence that lives up to the company’s name, Peerless. I helped her automate several of her manual tasks and set the clear, supportive tone of the site. I also built a secure, client portal where clients can make payments, upload documents and check the status of their return. Under the hood, I installed Google Analytics and created Goals and Events to track conversions, button click and file downloads.</p>
+            
+            <div class="desc">
+                <h3><a href="https://peerlesstaxprofessionals.com/" target="_blank">Peerless Tax Professionals</a></h3>
 
-            <ul>
-                <li>HTML5/CSS</li>
-                <li>JavaScript/jQuery</li>
-                <li>PHP</li>
-                <li>MySQL</li>
-                <li>Calendly</li>
-                <li>Google Analytics</li>
-                <li>Let’s Encrypt SSL</li>
-                <li>Trello</li>
-            </ul>
-        </section>
+                <p>This site is for a new, tax prep service company located outside Columbus, OH. The owner was looking for an online presence that lives up to the company’s name, Peerless.</p>
+                <!-- I helped her automate several of her manual tasks and set the clear, supportive tone of the site. I also built a secure, client portal where clients can make payments, upload documents and check the status of their return. Under the hood, I installed Google Analytics and created Goals and Events to track conversions, button click and file downloads. -->
 
-        <section>
-            <h3><a href="https://frozen-coast-60286.herokuapp.com/" target="_blank">Date Night Recipe</a></h3>
+                <h5>Tech Stack:</h5>
 
-            <img src="date-night.jpg" alt="Date Night App" />
-            <p>This app is a fun twist on ’Netflix & Chill’. The user starts by providing their basic info, including their zip code. Once they select their movie, we pass their zip to the Yelp API to find nearby restaurants with a cuisine that should pair well with the selected flick. We had a good time and took a lot of creative license determining the paired cuisine. For example, Fight Club returns nearby places that serve Meatloaf. Finally, users are presented with their movie and restaurant pairing as their “recipe” for a great date night.</p>
+                <ul class="stack">
+                    <li>HTML5/CSS</li>
+                    <li>JavaScript/jQuery</li>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                    <li>Calendly</li>
+                    <li>Google Analytics</li>
+                    <li>Let’s Encrypt SSL</li>
+                    <li>Trello</li>
+                </ul>
 
-            <ul>
-                <li>HTML5/CSS</li>
-                <li>JavaScript/jQuery</li>
-                <li>Node/Express</li>
-                <li>Mongo/Mongoose</li>
-                <li>Mocha/Chai</li>
-                <li>Git/GitHub</li>
-                <li>Travis CI</li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Class Management App for Girl Develop It-Atlanta</h3>
-
-            <p>As a GDI Class Organizer, we needed a simple, centralized way to manage the various resources (spreadsheets, Trello lists, HQ documents) needed to schedule and coordinate our training class offerings. We needed a way for everyone on the Leadership Committee to see, at a glance, our scheduled classes and the progress of each toward being fully “organized” (instructor, TAs, venue, Meetup.com event link). Once the class details are confirmed, the system pushes the details to Meetup.com via their API to create the new event, making it available to our members for registration.</p>
-
-            <ul>
-                <li>React/Redux</li>
-                <li>CSS</li>
-                <li>Node/Express</li>
-                <li>Mongo/Mongoose</li>
-                <li>Enzyme/Jest</li>
-                <li>Git/GitHub</li>
-            </ul>
-        </section>
-
-         <!--<section>
+                <a class="button" href="https:peerless.com" target="_blank">
+                    Visit Site <span class="fa fa-arrow-right"></span>
+                </a>
+            </div>
             
         </section>
-        
+
         <section>
-            Section 4
-        </section> -->
+            <img src="date-night.jpg" alt="Date Night App" />
+
+            <div class="desc">
+                <h3><a href="https://frozen-coast-60286.herokuapp.com/" target="_blank">Date Night Recipe</a></h3>
+            
+                <p>This app is a fun twist on ’Netflix & Chill’. The user starts by providing their basic info, including their zip code.</p>
+
+            <!--Once they select their movie, we pass their zip to the Yelp API to find nearby restaurants with a cuisine that should pair well with the selected flick. We had a good time and took a lot of creative license determining the paired cuisine. For example, Fight Club returns nearby places that serve Meatloaf. Finally, users are presented with their movie and restaurant pairing as their “recipe” for a great date night.-->
+            
+                <h5>Tech Stack:</h5>
+
+                <ul class="stack">
+                    <li>HTML5/CSS</li>
+                    <li>JavaScript/jQuery</li>
+                    <li>Node/Express</li>
+                    <li>Mongo/Mongoose</li>
+                    <li>Mocha/Chai</li>
+                    <li>Git/GitHub</li>
+                    <li>Travis CI</li>
+                </ul>
+
+                <a class="button" href="https://frozen-coast-60286.herokuapp.com/" target="_blank">
+                    Visit Site <span class="fa fa-arrow-right"></span>
+                </a>
+
+            </div>
+        </section>
+
+        <section>
+            <img src="http://lorempixel.com/427/300/city" alt="GDI Class Management App" />
+
+            <div class="desc">
+                    <h3><a href="#" target="_blank">Class Management App for GDI-Atl</a></h3>
+
+                    <p>As a GDI Class Organizer, we needed a simple, centralized way to manage the various resources (spreadsheets, Trello lists, HQ documents) needed to schedule and coordinate our training class offerings.</p>
+
+                    <!-- We needed a way for everyone on the Leadership Committee to see, at a glance, our scheduled classes and the progress of each toward being fully “organized” (instructor, TAs, venue, Meetup.com event link). Once the class details are confirmed, the system pushes the details to Meetup.com via their API to create the new event, making it available to our members for registration. -->
+        
+                    <h5>Tech Stack:</h5>
+                    <ul class="stack">
+                        <li>React/Redux</li>
+                        <li>CSS</li>
+                        <li>Node/Express</li>
+                        <li>Mongo/Mongoose</li>
+                        <li>Enzyme/Jest</li>
+                        <li>Git/GitHub</li>
+                    </ul>
+
+                    <a class="button" href="https:yahoo.com" target="_blank">
+                        Visit Site <span class="fa fa-arrow-right"></span>
+                    </a>
+            </div>
+            
+        </section>
+
     </main>
     <footer role="content-info"><h3>Contact Me:</h3>
         <p>
