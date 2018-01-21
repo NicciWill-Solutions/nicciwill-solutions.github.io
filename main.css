@@ -170,7 +170,8 @@
   .nicciImg {
     width: 200px;
     height: 200px;
-    background: #777;
+    background: url("./images/headshot300x300.jpg");
+    background-position: center center;
     border-radius: 50%;
     margin: 15px auto;
   }
